@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/evalle/webservice/models"
+)
 
 func main() {
-	fmt.Println("Hello from go mod!")
+	u := models.User{
+		ID:        2,
+		FirstName: "John",
+		LastName:  "Doe",
+	}
+	fmt.Println(u)
 }
